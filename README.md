@@ -1,4 +1,4 @@
-## Multiplayer Movement Sync
+## Multiplayer Movement Sync - AWS
 
 * Uses API Gateway to establish a websocket connection 
 * Three Lambda functions that handle match making, game play communication, and disconnections respectively
