@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 const ddb = new AWS.DynamoDB.DocumentClient();
 require('./patch.js');
 let send = undefined;
-const TABLE_NAME = "game-session-1";
+const TABLE_NAME = "game-session-1"; // your dynamodb table name
 const FIRST_TO_JOIN_OP = "0";
 const REQUEST_START_OP = "1";
 const THROW_OP = "5";
@@ -163,7 +163,7 @@ exports.handler = (event, context, callback) => {
 
                      let posMsg = '{ "opcode": ' + OPPONENT_VELOCITY + ', "timestamp": ' + Date.now() +
                         ', "velocity": ' + buildVelocityObject(message.velocity) + ', "seq": ' + message.seq +
-                        ' }';
+                        ', "currentPos": ' + buildVelocityObject(message.currentPos) + ' }';
                      console.log(posMsg);
 
                      // player1 sent location, send loc to player2
@@ -175,7 +175,7 @@ exports.handler = (event, context, callback) => {
                   console.log(message.velocity);
                   let posMsg = '{ "opcode": ' + OPPONENT_VELOCITY + ', "timestamp": ' + Date.now() +
                      ', "velocity": ' + buildVelocityObject(message.velocity) + ', "seq": ' + message.seq +
-                     ' }';
+                     ', "currentPos": ' + buildVelocityObject(message.currentPos) + ' }';
                   console.log(posMsg);
 
                   // player2 sent location, send loc to player 1
