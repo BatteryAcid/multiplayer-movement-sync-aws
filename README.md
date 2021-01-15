@@ -10,7 +10,7 @@
 
 ## Tutorial Video 
 
-* TODO  
+* https://youtu.be/cMGLFkG1iDg  
 
 ### Sources ###
 
