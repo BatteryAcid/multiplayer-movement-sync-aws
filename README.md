@@ -11,6 +11,10 @@
 ## Tutorial Video 
 
 * https://youtu.be/cMGLFkG1iDg  
+    
+## 👋 Let's talk shop 👇  
+[Discord] https://discord.gg/psjbBDvNBK  
+[Twitter] https://twitter.com/BatteryAcidDev
 
 ### Sources ###
 
